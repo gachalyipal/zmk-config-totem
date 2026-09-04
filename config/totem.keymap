@@ -24,7 +24,7 @@
            &kp Q           &kp W           &kp E         &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O            &kp P
            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F  &kp G           &kp H        &mt RCTRL J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
 &kp GRAVE  &kp Z           &kp X           &kp C         &kp V        &kp B           &kp N        &kp M        &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                           &to 4         &lt 2 TAB    &lt 1 BSPC    &lt 1 SPACE  &lt 2 ENTER  &mo 3
+                                           &tog 4        &lt 2 TAB    &lt 1 BSPC    &lt 1 SPACE  &lt 2 ENTER  &mo 3
             >;
         };
 
@@ -60,7 +60,7 @@
           &kp Q           &kp W           &kp E         &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O            &kp P
           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F  &kp G           &kp H        &mt RCTRL J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
 &kp NUBS  &kp Z           &kp X           &kp C         &kp V        &kp B           &kp N        &kp M        &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                          &to 0         &lt 2 TAB    &lt 1 BSPC    &lt 1 SPACE  &lt 2 ENTER  &mo 3
+                                          &tog 4        &lt 2 TAB    &lt 1 BSPC    &lt 1 SPACE  &lt 2 ENTER  &mo 3
             >;
         };
 
