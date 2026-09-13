@@ -109,7 +109,7 @@
            &kp Q           &kp W           &kp E         &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O            &kp P
            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F  &kp G           &kp H        &mt RCTRL J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
 &kp GRAVE  &kp Z           &kp X           &kp C         &kp V        &kp B           &kp N        &kp M        &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                           &os_acc HU_ACCENT WINDOWS  &lt MAC_SYM TAB  &lt NAV BSPC  &lt NAV SPACE  &lt MAC_SYM ENTER  &mo DEVICE
+                                           &lt MAC_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC  &lt NAV SPACE  &lt MAC_SYM ENTER  &mo DEVICE
             >;
         };
 
@@ -118,7 +118,7 @@
           &kp Q           &kp W           &kp E         &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O            &kp P
           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F  &kp G           &kp H        &mt RCTRL J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
 &kp NUBS  &kp Z           &kp X           &kp C         &kp V        &kp B           &kp N        &kp M        &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                          &os_acc HU_ACCENT WINDOWS  &lt WIN_SYM TAB  &lt NAV BSPC  &lt NAV SPACE  &lt WIN_SYM ENTER  &mo DEVICE
+                                          &lt WIN_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC  &lt NAV SPACE  &lt WIN_SYM ENTER  &mo DEVICE
             >;
         };
 
