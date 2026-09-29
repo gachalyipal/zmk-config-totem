@@ -61,61 +61,117 @@
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp NUMBER_1>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp NUMBER_1>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         caps_2: caps_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp NUMBER_2>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp NUMBER_2>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         caps_3: caps_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp NUMBER_3>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp NUMBER_3>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         caps_4: caps_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp NUMBER_4>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         caps_q: caps_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp Q>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         caps_w: caps_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp W>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         caps_e: caps_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp E>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         caps_r: caps_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings = <&macro_press &kp CAPSLOCK>, <&macro_tap &kp R>, <&macro_release &kp CAPSLOCK>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPSLOCK>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp CAPSLOCK>;
         };
+
         win_tilde: win_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp RA(N1) &kp SPACE>;
+            bindings = <&macro_tap>, <&kp RA(N1) &kp SPACE>;
         };
     };
 
@@ -124,64 +180,64 @@
 
         mac {
             bindings = <
-           &kp Q           &kp W           &kp E         &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O            &kp P
-           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F  &kp G           &kp H        &mt RCTRL J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
-&kp GRAVE  &kp Z           &kp X           &kp C         &kp V        &kp B           &kp N        &kp M        &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                           &lt MAC_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC  &lt NAV SPACE  &lt MAC_SYM ENTER  &mo DEVICE
+           &kp Q           &kp W           &kp E            &kp R                      &kp T           &kp Y          &kp U              &kp I        &kp O            &kp P
+           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D     &mt LCTRL F                &kp G           &kp H          &mt RCTRL J        &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
+&kp GRAVE  &kp Z           &kp X           &kp C            &kp V                      &kp B           &kp N          &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
+                                           &lt MAC_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC    &lt NAV SPACE  &lt MAC_SYM ENTER  &mo DEVICE
             >;
         };
 
         windows {
             bindings = <
-          &kp Q           &kp W           &kp E         &kp R        &kp T           &kp Y        &kp U        &kp I        &kp O            &kp P
-          &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F  &kp G           &kp H        &mt RCTRL J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
-&kp NUBS  &kp Z           &kp X           &kp C         &kp V        &kp B           &kp N        &kp M        &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                          &lt WIN_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC  &lt NAV SPACE  &lt WIN_SYM ENTER  &mo DEVICE
+          &kp Q           &kp W           &kp E            &kp R                      &kp T           &kp Y          &kp U              &kp I        &kp O            &kp P
+          &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D     &mt LCTRL F                &kp G           &kp H          &mt RCTRL J        &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
+&kp NUBS  &kp Z           &kp X           &kp C            &kp V                      &kp B           &kp N          &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
+                                          &lt WIN_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC    &lt NAV SPACE  &lt WIN_SYM ENTER  &mo DEVICE
             >;
         };
 
         navigation {
             bindings = <
-            &caps_1     &caps_2     &caps_3     &caps_4     &none     &kp F1   &kp F2       &kp F3       &kp F4     &kp F5
-            &caps_q     &caps_w     &caps_e     &caps_r     &none     &kp F6   &mt F7 LEFT  &mt F8 DOWN  &mt F9 UP  &mt F10 RIGHT
-&kp ESCAPE  &trans      &none       &none       &none       &none     &kp F11  &kp F12      &kp F13      &kp F14    &kp F15        &kp F16
-                                    &trans      &trans      &trans    &none    &none        &none
+            &caps_1  &caps_2  &caps_3  &caps_4  &none     &kp F1   &kp F2       &kp F3       &kp F4     &kp F5
+            &caps_q  &caps_w  &caps_e  &caps_r  &none     &kp F6   &mt F7 LEFT  &mt F8 DOWN  &mt F9 UP  &mt F10 RIGHT
+&kp ESCAPE  &trans   &none    &none    &none    &none     &kp F11  &kp F12      &kp F13      &kp F14    &kp F15        &kp F16
+                              &trans   &trans   &trans    &none    &none        &none
             >;
         };
 
         mac_sym {
             bindings = <
-        &kp LA(COMMA)  &kp LS(N8)        &kp LA(N8)  &kp LS(N9)        &kp LA(DOT)    &kp N5           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N9
-        &kp LA(N2)     &kp LA(LS(LBKT))  &kp LS(N7)  &kp LA(LS(RBKT))  &kp LA(N7)     &kp NUBS         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N4
-&kp LS(N6)  &kp LA(LBKT)  &kp LA(N1)     &kp LA(RBKT)  &kp LA(BSLH)    &kp LA(LS(BSLH))  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                                      &trans          &trans           &trans             &trans           &trans        &trans
+            &kp LA(COMMA)  &kp LS(N8)        &kp LA(N8)    &kp LS(N9)        &kp LA(DOT)         &kp N5    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N9
+            &kp LA(N2)     &kp LA(LS(LBKT))  &kp LS(N7)    &kp LA(LS(RBKT))  &kp LA(N7)          &kp NUBS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N4
+&kp LS(N6)  &kp LA(LBKT)   &kp LA(N1)        &kp LA(RBKT)  &kp LA(BSLH)      &kp LA(LS(BSLH))    &trans    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+                                             &trans        &trans            &trans              &trans    &trans        &trans
             >;
         };
 
         win_sym {
             bindings = <
-        &kp RA(NUBS)  &kp LS(N8)  &kp RA(FSLH)  &kp LS(N9)  &kp RA(DOT)    &kp N5           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N9
-        &kp RA(V)     &kp RA(B)   &kp LS(N7)    &kp RA(N)   &kp RA(C)      &kp GRAVE        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N4
-&kp LS(N6)  &kp RA(Q)  &kp RA(F)   &win_tilde   &kp RA(G)   &kp RA(W)      &trans           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                               &trans         &trans      &trans         &trans           &trans        &trans
+            &kp RA(NUBS)  &kp LS(N8)  &kp RA(FSLH)  &kp LS(N9)  &kp RA(DOT)    &kp N5     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N9
+            &kp RA(V)     &kp RA(B)   &kp LS(N7)    &kp RA(N)   &kp RA(C)      &kp GRAVE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N4
+&kp LS(N6)  &kp RA(Q)     &kp RA(F)   &win_tilde    &kp RA(G)   &kp RA(W)      &trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp CAPSLOCK
+                                      &trans        &trans      &trans         &trans     &trans        &trans
             >;
         };
 
         hu_accent {
             bindings = <
-       &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_0  &kp MINUS  &kp EQUAL  &trans
-       &trans  &trans  &trans  &trans  &trans    &trans  &kp LBKT      &kp RBKT   &kp BSLH   &trans
-&trans &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans     &trans     &trans  &trans
-                       &trans  &trans  &trans    &trans  &trans        &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_0  &kp MINUS  &kp EQUAL  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp LBKT      &kp RBKT   &kp BSLH   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans     &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans        &trans
             >;
         };
 
         gaming {
             bindings = <
-            &kp TAB    &kp Q  &kp W      &kp E          &kp R        &kp Y            &kp U              &kp I      &kp O    &kp P
-            &kp LSHFT  &kp A  &kp S      &kp D          &kp F        &kp H            &kp J              &kp K      &kp L    &kp SEMICOLON
-&kp ESCAPE  &kp LCTRL  &kp Z  &kp X      &kp C          &kp V        &kp N            &kp M              &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                              &kp LALT   &mo GAMING_NUM &kp SPACE    &lt NAV SPACE    &lt WIN_SYM ENTER  &mo DEVICE
+            &kp TAB    &kp Q  &kp W     &kp E           &kp R        &kp Y          &kp U              &kp I       &kp O    &kp P
+            &kp LSHFT  &kp A  &kp S     &kp D           &kp F        &kp H          &kp J              &kp K       &kp L    &kp SEMICOLON
+&kp ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C           &kp V        &kp N          &kp M              &kp COMMA   &kp DOT  &kp FSLH       &kp APOS
+                              &kp LALT  &mo GAMING_NUM  &kp SPACE    &lt NAV SPACE  &lt WIN_SYM ENTER  &mo DEVICE
             >;
         };
 
