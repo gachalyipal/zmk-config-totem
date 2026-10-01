@@ -46,6 +46,17 @@
             bindings = <&mo>, <&kp>;
         };
 
+        // Keep navigation holds available after typing or repeated backspaces.
+        nav_bspc: navigation_backspace {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <0>;
+            require-prior-idle-ms = <0>;
+            bindings = <&mo>, <&kp>;
+        };
+
         os_acc: os_accent_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -59,8 +70,8 @@
         caps_1: caps_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -73,8 +84,8 @@
         caps_2: caps_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -87,8 +98,8 @@
         caps_3: caps_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -101,8 +112,8 @@
         caps_4: caps_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -115,8 +126,8 @@
         caps_q: caps_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -129,8 +140,8 @@
         caps_w: caps_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -143,8 +154,8 @@
         caps_e: caps_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -157,8 +168,8 @@
         caps_r: caps_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp CAPSLOCK>,
@@ -183,7 +194,7 @@
            &kp Q           &kp W           &kp E            &kp R                      &kp T           &kp Y          &kp U              &kp I        &kp O            &kp P
            &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D     &mt LCTRL F                &kp G           &kp H          &mt RCTRL J        &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
 &kp GRAVE  &kp Z           &kp X           &kp C            &kp V                      &kp B           &kp N          &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                           &lt MAC_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC    &lt NAV SPACE  &lt MAC_SYM ENTER  &mo DEVICE
+                                           &lt MAC_SYM TAB  &os_acc HU_ACCENT WINDOWS  &nav_bspc NAV BSPC    &lt NAV SPACE  &lt MAC_SYM ENTER  &mo DEVICE
             >;
         };
 
@@ -192,7 +203,7 @@
           &kp Q           &kp W           &kp E            &kp R                      &kp T           &kp Y          &kp U              &kp I        &kp O            &kp P
           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D     &mt LCTRL F                &kp G           &kp H          &mt RCTRL J        &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON
 &kp NUBS  &kp Z           &kp X           &kp C            &kp V                      &kp B           &kp N          &kp M              &kp COMMA    &kp DOT          &kp FSLH                 &kp APOS
-                                          &lt WIN_SYM TAB  &os_acc HU_ACCENT WINDOWS  &lt NAV BSPC    &lt NAV SPACE  &lt WIN_SYM ENTER  &mo DEVICE
+                                          &lt WIN_SYM TAB  &os_acc HU_ACCENT WINDOWS  &nav_bspc NAV BSPC    &lt NAV SPACE  &lt WIN_SYM ENTER  &mo DEVICE
             >;
         };
 
